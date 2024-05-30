@@ -98,7 +98,4 @@ STOPSIGNAL SIGTERM
 #remmove temp
 RUN rm  -rf /tmp/* /var/cache/apk/*
 
-#ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-#CMD ["nginx", "-g", "daemon off;"]
-#CMD ["/bin/bash", "-c", "php-fpm82 && chmod 777 /var/run/php/php82-fpm.sock && chmod 755 ${ENV_PATH}/* && nginx -g 'daemon off;'"]
